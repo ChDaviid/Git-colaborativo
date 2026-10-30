@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reseña de Batman</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link type="text/css" href="css/estilo_batman.css" rel="stylesheet">
+</head>
+<body>
+  <video class="video-fondo" autoplay muted loop playsinline aria-hidden="true">
+    <source src="imagenes/portada_batmangif.mp4" type="video/mp4">
+  </video>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu-principal">
+    <div class="container">
+      <a class="navbar-brand" href="batman.html">Batman Arkham Saga</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+        aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="batman_arkham_saga.html">Arkham Saga</a></li>
+          <li class="nav-item"><a class="nav-link" href="personajes_aliados.html">Aliados</a></li>
+          <li class="nav-item"><a class="nav-link" href="villanos.html">Villanos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="reseña.html">Reseña</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pagina-contenido container py-5">
+    <article class="card contenido-card">
+      <div class="card-body">
+        <h1>Reseña</h1>
+        <form action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="personaje">¿Cuál es tu personaje favorito?</label>
+          <select id="personaje" name="personaje" required>
+            <option value="">Selecciona una opción</option>
+            <option value="batman">Batman</option>
+            <option value="robin">Robin</option>
+            <option value="nightwing">Nightwing</option>
+            <option value="joker">Joker</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <label for="villano">¿Cuál es tu villano favorito?</label>
+          <select id="villano" name="villano" required>
+            <option value="">Selecciona una opción</option>
+            <option value="joker">Joker</option>
+            <option value="mr-freeze">Mr. Freeze</option>
+            <option value="scarecrow">Scarecrow</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <label for="comentario">Cuéntanos tu opinión:</label>
+          <textarea id="comentario" name="comentario" rows="5"></textarea>
+
+          <button type="submit">Enviar reseña</button>
+        </form>
+        <a class="btn btn-danger mt-3" href="batman.html">Volver al inicio</a>
+      </div>
+    </article>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
